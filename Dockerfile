@@ -11,6 +11,9 @@ ENV PATH /usr/local/bin:$PATH
 
 COPY etl_apps/ /usr/local/etl_apps/
 
+RUN mkdir /usr/local/output && mkdir /usr/local/system_info
+VOLUME /usr/local/output /usr/local/system_info
+
 RUN digdag --version
 
 RUN embulk --version
