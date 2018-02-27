@@ -9,6 +9,8 @@ RUN apk del curl
 
 ENV PATH /usr/local/bin:$PATH
 
+COPY etl_apps/ /usr/local/etl_apps/
+
 RUN digdag --version
 
 RUN embulk --version
