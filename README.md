@@ -19,6 +19,8 @@ EmbulkとDigdagでETLを構築するためのプロジェクトテンプレー�
 | 環境変数名 | 意味 |
 | ETL_APPS_ROOT | ETLアプリケーションの内容です。イメージビルド時にコピーされる `etl_apps` のパスとなります。 |
 | EMBULK_APPS_ROOT | Embulkローダ設定のルートパスです。 `${ETL_APPS_ROOT}/embulk` となります。 |
+| ETL_APPS_TARGET_ROOT | 実行に必要な中間ファイルを置くための場所です。 |
+| EMBULK_APPS_TARGET | Embulkの中間ファイル格納場所です。 `${ETL_APPS_TARGET_ROOT}/embulk` となります。 |
 
 ## Embulkの実行について
 
